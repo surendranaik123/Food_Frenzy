@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Beverages from "./Beverages";
+import About from "./About"
 
 function RouterPage() {
   console.log("RouterPage rendered");
@@ -21,6 +22,7 @@ function RouterPage() {
         <Route path="/beve" element={<Beverages />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/signin" element={<Login />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </Router>
   );
