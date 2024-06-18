@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import img from '../../Assets/logo.png';
 import personlogo from '../../Assets/person-circle.svg';
-import '../../Styles/global.css';
+import '../../Styles/Header.css';
 import { Dropdown, DropdownItem } from 'react-bootstrap';
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { BsList, BsX } from 'react-icons/bs'; // Import the menu and close icons
@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className='Header'>
       <div style={{ marginLeft: "20px", marginRight: "20px" }}>
         <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
           <a href="/" className="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
@@ -67,7 +67,7 @@ function Header() {
               </NavDropdown>
 
               <div className="menu-icon" onClick={toggleMenu} style={{ cursor: 'pointer' }}>
-            {menuOpen ? <BsX /> : <BsList />}
+
           </div>
             </li>
           </ul>

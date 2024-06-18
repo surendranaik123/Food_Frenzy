@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/layout/Header";
 import img from "../Assets/image.png";
-import "../Styles/global.css";
+import "../Styles/Landing.css";
 import { Navigate, useNavigate } from "react-router-dom";
 
 function LandingPage() {
