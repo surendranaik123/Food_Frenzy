@@ -1,14 +1,13 @@
-import React from 'react'
-import '.././src/Pages/RouterPage'
-import RouterPage from '.././src/Pages/RouterPage'
+import React from "react";
+import ".././src/Pages/RouterPage";
+import RouterPage from ".././src/Pages/RouterPage";
 
 function App() {
   return (
     <div>
-
-      <RouterPage/>
+      <RouterPage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
