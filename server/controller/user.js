@@ -7,27 +7,40 @@ const secretKey = 'yourSecretKey'; // Replace with your actual secret key
 class userController {
  
 
-  static createUser= async (req, res) => {
-    const { name, email, password, age, phoneno } = req.body;
+  static createUser = async (req, res) => {
+    const { email, firstName, lastName, password, confirmPassword } = req.body;
   
     try {
+      if (!firstName || !lastName || !password || !confirmPassword) {
+        return res.status(400).json({ message: "All fields are required" });
+      }
+  
+      // Check if password and confirmPassword match
+      if (password !== confirmPassword) {
+        return res.status(400).json({ message: "Passwords do not match" });
+      }
+  
+      // Hash the password
+      const hashedPassword = await bcrypt.hash(password, 10); // 10 is the salt rounds
+  
+      // Create a new user instance with hashed password
       const newUser = new UserModel({
-        name,
         email,
-        password,
-        age,
-        phoneno,
+        firstName,
+        lastName,
+        password: hashedPassword,
       });
   
+      // Save the user to the database
       const savedUser = await newUser.save();
   
       res.status(201).json(savedUser);
     } catch (error) {
       console.error("Error creating user:", error);
-      res.status(400).json({ message: "Failed to create user" });
+      res.status(400).json({ message: "Failed to create user", error: error.message });
     }
   };
-  
+
   static getAllUsers = async (req, res) => {
     try {
       const allUsers = await UserModel.find({});
@@ -89,34 +102,6 @@ class userController {
     }
   
   }
-  // static loginAuth = async (req, res) => {
-  //   const { email, password } = req.body;
-  
-  //   try {
-  //     const user = await UserModel.findOne({ email });
-  
-  //     if (user) {
-  //       const passwordMatch = await bcrypt.compare(password, user.password);
-  
-  //       if (passwordMatch) {
-  //         // Passwords match, user is authenticated
-  //         const token = jwt.sign({ userId: user._id }, secretKey, { expiresIn: '1h' });
-  
-  //         res.json({ message: 'Authenticated', token });
-  //       } else {
-  //         // Passwords do not match
-  //         res.status(401).json({ message: 'Incorrect password' });
-  //       }
-  //     } else {
-  //       // User with the provided email does not exist
-  //       res.status(404).json({ message: 'User not found' });
-  //     }
-  //   } catch (e) {
-  //     // Handle other errors (e.g., database error)
-  //     console.error(e);
-  //     res.status(500).json({ message: 'Internal server error' });
-  //   }
-  // };
 
 static logout = async (req, res) => {
   res.clearCookie('token'); // Clear the token or session cookie

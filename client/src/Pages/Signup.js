@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Styles/signup.css";
 import signupVideo from "../Assets/signup.mp4";
 
@@ -11,7 +11,7 @@ const Signup = () => {
     password: "",
     confirmPassword: "",
   });
-
+const navigate=useNavigate( )
   const [formErrors, setFormErrors] = useState({});
 
   const handleChange = (e) => {
@@ -45,11 +45,55 @@ const Signup = () => {
     return errors;
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setFormErrors(validate(formValues));
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormErrors(validate(formValues));
+    const errors = validate(formValues);
+    setFormErrors(errors);
+  
+    if (Object.keys(errors).length === 0) {
+      fetch("http://localhost:6000/api/v1/usercreate", {
+        method: "POST",
+        crossDomain: true,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          email: formValues.email,
+          firstName: formValues.firstName,
+          lastName: formValues.lastName,
+          password: formValues.password,
+          confirmPassword: formValues.confirmPassword,
+        }),
+      })
+        .then((res) => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            throw new Error("Server Error");
+          }
+        })
+        .then((data) => {
+          console.log(data, "userRegister");
+          if (data.status === "ok") {
+            alert("Registration Successful");
+            navigate("/signin");
+          } else {
+            alert("Something went wrong");
+          }
+        })
+        .catch((error) => {
+          alert("Server Error: Something went wrong");
+        });
+    }
   };
 
+console.log(formValues);
   return (
     <div>
     
@@ -147,3 +191,5 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
