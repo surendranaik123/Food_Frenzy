@@ -43,7 +43,7 @@ function Header() {
               <a href="/offers" className="nav-link-custom">Offers</a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link-custom">About Us</a>
+              <a href="/About" className="nav-link-custom">About Us</a>
             </li>
 
             <li className="nav-item" style={{ display: "flex", marginLeft: "140px" }}>
