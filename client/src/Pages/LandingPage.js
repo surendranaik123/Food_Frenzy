@@ -27,6 +27,7 @@ function LandingPage() {
     <div>
       <div className="landing_hero">
         <Header />
+        
         <div style={{ display: "flex" }}>
           <div>
             <h3 className="biryani_text">Biryani</h3>
@@ -72,6 +73,8 @@ function LandingPage() {
           SignUp
         </p>
       </div>
+
+      
     </div>
   );
 }
