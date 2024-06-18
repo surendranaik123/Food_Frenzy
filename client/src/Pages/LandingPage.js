@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/layout/Header";
 import img from "../Assets/image.png";
-import "../Styles/global.css";
+import "../Styles/Landing.css";
 import { Navigate, useNavigate } from "react-router-dom";
 
 function LandingPage() {
@@ -27,6 +27,7 @@ function LandingPage() {
     <div>
       <div className="landing_hero">
         <Header />
+        
         <div style={{ display: "flex" }}>
           <div>
             <h3 className="biryani_text">Biryani</h3>
@@ -72,6 +73,8 @@ function LandingPage() {
           SignUp
         </p>
       </div>
+
+      
     </div>
   );
 }

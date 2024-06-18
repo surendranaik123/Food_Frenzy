@@ -1,0 +1,12 @@
+.nav-link-custom{
+    text-decoration: none;
+    font-family: 'Scheherazade New';
+    margin: 10px;
+    color: #000000;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.Header{
+    margin-top: -20px;
+}

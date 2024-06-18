@@ -1,0 +1,139 @@
+.about_background{
+    position: absolute;
+    width: 1350px;
+    height: 892px;
+    
+    background: #D9D9D9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.aboutUs_person_1{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 200px;
+    background: #FFFFFF;
+    
+}
+.aboutUs_person_2{
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      margin-top: 100px;
+      margin-left: 800px;
+      background: #FFFFFF;
+}
+.aboutUs_person_3{
+margin-top: 500px;
+margin-left: 50px;
+position: absolute;
+width: 350px;
+height: 350px;
+
+background: #FFFFFF;
+
+}
+.aboutUs_person_4{
+    margin-top: 500px;
+    margin-left: 500px;
+position: absolute;
+width: 350px;
+height: 350px;
+
+background: #FFFFFF;
+}
+.aboutUs_person_5{
+    margin-top: 500px;
+    margin-left: 950px;
+position: absolute;
+width: 350px;
+height: 350px;
+
+background: #FFFFFF;
+}
+.aboutUs_person_1_name{
+    /* MANOJ */
+
+position: absolute;
+width: 107px;
+height: 39px;
+
+font-family: 'Secular One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+
+color: #000000;
+
+margin-top: 380px;
+margin-left: 210px;
+}
+.aboutUs_person_2_name{
+    /* MANOJ */
+
+position: absolute;
+width: 107px;
+height: 39px;
+
+font-family: 'Secular One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+
+color: #000000;
+
+margin-top: 380px;
+margin-left: 810px;
+}
+.aboutUs_person_3_name{
+    position: absolute;
+width: 107px;
+height: 39px;
+
+font-family: 'Secular One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+
+color: #000000;
+margin-top: 760px;
+margin-left: 60px;
+
+}
+.aboutUs_person_4_name{
+    position: absolute;
+width: 107px;
+height: 39px;
+
+font-family: 'Secular One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+
+color: #000000;
+margin-top: 760px;
+margin-left: 510px;
+
+}
+.aboutUs_person_5_name{
+    position: absolute;
+width: 107px;
+height: 39px;
+
+font-family: 'Secular One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 44px;
+
+color: #000000;
+margin-top: 760px;
+margin-left: 960px;
+
+}
+

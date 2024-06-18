@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/layout/Header'
 import img from "../Assets/image.png";
+import "../Styles/Beverages.css"
 
 function Veg() {
   return (
