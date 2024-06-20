@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
+import '../Styles/Landing.css';
 import Header from "../Components/layout/Header";
-import img from "../Assets/image.png";
-import "../Styles/Landing.css";
+import img from '../Assets/image.png'; // Adjust the path to your image
 import { Navigate, useNavigate } from "react-router-dom";
 
-function LandingPage() {
+const LandingPage = () => {
+
   const navigation = useNavigate();
 
   const Veg = () => {
@@ -22,61 +23,66 @@ function LandingPage() {
   };
   const SignUp = () => {
     navigation("/signup");
-  };
-  return (
-    <div>
-      <div className="landing_hero">
-        <Header />
-        
-        <div style={{ display: "flex" }}>
-          <div>
-            <h3 className="biryani_text">Biryani</h3>
-            <h3 className="biryani_text1"> We All Love</h3>
-            <button className="homebutton">View More</button>
-          </div>
+  }
+;
+    return (
+        <div className="landing_hero">
+            <Header />
+            <div className="hero-section-modified">
+                <div className="text-container">
+                    <h3 className="biryani_text_modified">Biryani</h3>
+                    <h3 className="biryani_text1_modified"> We All Love</h3>
+                    <button className="homebutton_modified">View More</button>
+                </div>
+                <div className="hero_image_container">
+                    <img src={img} alt="biryani" className="home_logo_modified" />
+                </div>
+            </div>
 
-          <div className="hero">
-            <img src={img} alt="biryani" className="home_logo" />
-          </div>
-        </div>
-      </div>
-      <div className="Menu">
-        <h1 className="Menu_Text">Menu</h1>
-        <div onClick={Veg}>
-          <img className="Img_Veg" src={img} alt="" />
-          <p className="Menu_Text_Veg">Veg</p>
-        </div>
-        <div onClick={NonVeg}>
-          <img className="Img_Non-Veg" src={img} alt="" />
-          <p className="Menu_Text_Non-Veg">Non-Veg</p>
-        </div>
-        <div onClick={beverages}>
-          <img className="Img_Beverages" src={img} alt="" />
-          <p className="Menu_Text_Beverages">Beverages</p>
-        </div>
-      </div>
-      <div className="Login_sections">
-        <img className="Login_Image" src={img} alt="" />
-        <h1 className="Login_Text">Ready to get Started?</h1>
-        <p className="Login_info">
-          {" "}
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries
-        </p>
-        <p className="Login_Button" onClick={Login}>
-          Login
-        </p>
-        <p className="SignUp_Button" onClick={SignUp}>
-          SignUp
-        </p>
-      </div>
+            <section className="menu-section" id="veg">
+                <div className="menutext">
+                    <h2>Menu</h2>
+                </div>
+                <div className="menu-categories">
+                    <div onClick={Veg} className="menu-item">
+                        <div className="box-container">
+                            <img src={img} alt="Veg Biryani" className="biryani-image" />
+                        </div>
+                        <h3>Veg</h3>
+                    </div>
+                    <div onClick={NonVeg}className="menu-item" id="non-veg">
+                        <div className="box-container">
+                            <img src={img} alt="Non-Veg Biryani" className="biryani-image" />
+                        </div>
+                        <h3>Non-Veg</h3>
+                    </div>
+                    <div onClick={beverages} className="menu-item" id="beverages">
+                        <div className="box-container">
+                            <img src={img} alt="Beverages" className="biryani-image" />
+                        </div>
+                        <h3>Beverages</h3>
+                    </div>
+                </div>
+            </section>
 
-      
-    </div>
-  );
+            <section className="cta-section">
+                <div className="cta-content">
+                    <div className="cta-text">
+                        <h2>Ready to get Started?</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div className="cta-buttons">
+                        <button className="login" onClick={Login}>Login</button>
+                        <button className="signup" onClick={SignUp}>SignUp</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
 }
 
 export default LandingPage;
