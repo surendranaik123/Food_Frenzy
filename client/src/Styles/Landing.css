@@ -1,321 +1,286 @@
-
-.landing_hero{
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    left: 0px;
-    top: 0px;
-    background: #D6EAF5;
-    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
-.hero{
-position: absolute;
-width: 350px;
-height: 305px;
-left: 912px;
-top: 87px;
-border-radius: 100%;
-background: #6466BD;
 
+.menutext{
 
-}
-.home_logo{
-    position: absolute;
-    width: 308px;
-    height: 305px;
-    margin-left: -5px;
-    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100%;
-    background-color: #000000;
+font-family:sans-serif;
+font-weight: 900;
+
+   
+    
+    
     }
 
-.biryani_text{
-        position: absolute;
-    width: 511px;
-    height: 219px;
-    left: 163px;
-    top: 110px;
-    font-family: 'Italianno';
-    font-style: normal;
-    font-weight: 400;
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Hero Section Styles */
+.hero-section-modified {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(202, 220, 232);
+    position: relative;
+}
+
+.text-container {
+    position: relative;
+    left: 20px;
+}
+
+.biryani_text_modified {
+    font-family: 'Italianno', cursive;
     font-size: 200px;
-    line-height: 250px;
-    text-align: center;
-    
     color: #7072D3;
-    
-    }
-.biryani_text1 {
-    position: absolute;
-    width: 257px;
-    height: 58px;
-    left: 389px;
-    top: 300px;
-    font-family: fantasy;
-    font-style: normal;
-    font-weight: 400;
+    margin: 0;
+    margin-left: 120px;
+    margin-top: -50px;
+
+}
+
+.biryani_text1_modified {
+    font-family: 'Fantasy', sans-serif;
     font-size: 40px;
-    line-height: 20px;
-    text-align: center;
     color: #000000;
-letter-spacing: 0.15rem;
-}
-
-.homebutton{
-position: absolute;
-width: 180px;
-height: 50px;
-left: 200px;
-top: 350px;
-background: #A1211F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 50px;
-font-family: 'Sansita';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #FFFFFF;
-
-
+    letter-spacing: 0.15rem;
+    margin: 0;
+    margin-left: 320px;
+    margin-top: -70px;
 
 }
 
-.Menu{
-
+.homebutton_modified {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px 40px;
+    background-color: #A1211F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Sansita', sans-serif;
+    font-size: 20px;
 }
 
-.Menu_Text{
-
-
-position: absolute;
-width: 115px;
-height: 102px;
-left: 616px;
-top: 500px;
-
-font-family: 'Scheherazade New';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 102px;
-
-
-color: #000000;
-
-
+.hero_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
 }
 
-.Menu_Veg{
-
-position: absolute;
-width: 78px;
-height: 102px;
-left: 123px;
-top: 777px;
-
-font-family: 'Scheherazade New';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 102px;
-
-
-color: #5F60B3;
-
-
+.home_logo_modified {
+    width: 300px;
+    height: auto;
+    margin-right: 170px;
 }
 
-.Img_Veg{
-    background-color: gray;
-    /* Rectangle 3 */
 
-position: absolute;
-width: 324px;
-height: 287px;
-left: 70px;
-top: 650px;
-filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 20px;
+/* Menu Section Styles */
+.menu-section {
 
-}
-
-.Img_Non-Veg{
-background-color: gray;
-position: absolute;
-width: 324px;
-height: 287px;
-left: 500px;
-top: 650px;
-filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 20px;
-
-}
-
-.Img_Beverages{
-    background-color: gray;
-position: absolute;
-width: 324px;
-height: 287px;
-left: 930px;
-top: 650px;
-filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 20px;
-}
-
-.Menu_Text_Veg{
-
-position: absolute;
-width: 78px;
-height: 102px;
-left: 200px;
-top: 940px;
-
-font-family: 'Scheherazade New';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 102px;
-
-
-color: #5F60B3;
-}
-
-.Menu_Text_Non-Veg{
-
-position: absolute;
-width: 300px;
-height: 102px;
-left: 567px;
-top: 940px;
-
-font-family: 'Scheherazade New';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 102px;
-
-color: #5F60B3;
-
-
-}
-
-.Menu_Text_Beverages{
-
-position: absolute;
-width: 202px;
-height: 102px;
-left: 983px;
-top: 940px;
-
-font-family: 'Scheherazade New';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 102px;
-
-
-color: #5F60B3;
-
-
-}
-
-.Login_sections{
-position: absolute;
-width: 1362px;
-height: 350px;
-left: 0px;
-top: 1100px;
-
-background: #5F60B3;
-
-}
-.Login_Text{
+    margin-top: 50px;
+    padding: 20px;
     text-align: center;
-    position: absolute;
-    width: 500px;
-    height: 60px;
-    left: 268px;
-    top: 98px;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.box-container {
+    width: 300px;  /* Adjust the width as needed */
+    height: 250px;  /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;/* Box background color */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+    margin-bottom: 10px;
+}
+
+.biryani-image {
+    width: 240px;  /* Adjust the width as needed */
+    height: 240px;  /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-right: 100p;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #4b0082;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background-color: #7072D3;
+    color: white;
+    padding: 10 px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    height: 330px;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.cta-text {
+    max-width: 60%;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+.cta-buttons .login,
+.cta-buttons .signup {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: white;
+    color: #4b0082;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section-modified {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home_logo_modified {
+        width: 40%; /* Adjusted for smaller screens */
+        margin-top: 20px;
+        margin-left: 400px;
+
+    }
+    .biryani_text_modified {
+        margin-left: 5px;
+    }
+    .biryani_text1_modified {
+       margin-left: 150px;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        
+    }
+
+    .menu-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 10px;
+        
+    }
+
+    .cta-buttons .login,
+    .cta-buttons .signup {
+        margin: 0 10px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+   
+
+    .hero-section-modified {
+        flex-direction: column;
+    }
+
+    .biryani_text_modified {
+        font-size: 100px;
+        margin-left: -30px;
+        
+    }
+
+    .biryani_text1_modified {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-right: 100px;
+    }
+
+    .homebutton_modified {
+        padding: 8px 16px;
+        margin-right: 130px;
+    }
+
+    .cta-buttons .login,
+    .cta-buttons .signup {
+        padding: 8px 16px;
+        margin: 5px 0;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+    }
     
-    font-family: 'Alumni Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    color: #FFFFFF;
+    .home_logo_modified{
+        margin-left: 300px;
+
+    }
 
 }
-
-.Login_Image{
-
-position: absolute;
-width: 350px;
-height: 334.71px;
-left: -200px;
-top: 9px;
-filter: drop-shadow(15px 5px 4px rgba(0, 0, 0, 0.25));
-
-}
-
-.Login_info{
-    /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. */
-
-position: absolute;
-width: 374px;
-height: 84px;
-left: 290px;
-top: 175px;
-
-font-family: 'Alumni Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 14px;
-
-color: #FFFFFF;
-
-
-}
-
-.Login_Button{
-    position: absolute;
-width: 180px;
-height: 50px;
-left: 800px;
-top: 150px;
-background: white;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 50px;
-font-family: 'Sansita';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-
-color: #5F60B3;
-padding-top: 12px;
-
-}
-
-.SignUp_Button{
-    position: absolute;
-width: 180px;
-height: 50px;
-left: 1000px;
-top: 150px;
-background: white;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 50px;
-font-family: 'Sansita';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-
-color: #5F60B3;
-padding-top: 12px;
-}
-

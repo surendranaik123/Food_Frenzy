@@ -16,7 +16,7 @@ function Header() {
   return (
     <div className='Header'>
       <div style={{ marginLeft: "20px", marginRight: "20px" }}>
-        <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4">
+        <header className="d-flex flex-wrap justify-content-between align-items-center py-3 ">
           <a href="/" className="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
             <img src={img} alt='logo' style={{ height: "100px", width: "100px" }} />
             <span className="fs-4" style={{ fontFamily: "Scheherazade New", fontStyle: "normal", fontWeight: "700", fontSize: "35px", lineHeight: "45px", color: "#000000", marginLeft: "10px" }}>
