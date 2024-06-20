@@ -34,7 +34,6 @@ app.use("/api/v1", userRoutes);
 
 
 app.listen(PORT, () => {
-  console.log(`API is running on http://localhost:${PORT}`);
-  console.log(jwtSecret); 
+  console.log(`API is running on http://localhost:${PORT}`); 
 });
 

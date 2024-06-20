@@ -55,7 +55,14 @@ const navigate=useNavigate( )
     setFormErrors(errors);
   
     if (Object.keys(errors).length === 0) {
-      fetch("http://localhost:6000/api/v1/usercreate", {
+      console.log("Checked");
+      console.log("formValues",{email: formValues.email,
+        firstName: formValues.firstName,
+        lastName: formValues.lastName,
+        password: formValues.password,
+        confirmPassword: formValues.confirmPassword})
+        
+      fetch("http://localhost:5000/api/v1/usercreate", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -79,12 +86,10 @@ const navigate=useNavigate( )
           }
         })
         .then((data) => {
-          console.log(data, "userRegister");
-          if (data.status === "ok") {
+          console.log("userRegister",data );
+          if (data) {
             alert("Registration Successful");
             navigate("/signin");
-          } else {
-            alert("Something went wrong");
           }
         })
         .catch((error) => {
