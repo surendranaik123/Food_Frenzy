@@ -9,10 +9,12 @@ import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Beverages from "./Beverages";
 import About from "./About"
+import Footer from "../Components/layout/Footer";
 
 function RouterPage() {
   console.log("RouterPage rendered");
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -25,6 +27,9 @@ function RouterPage() {
         <Route path="/About" element={<About />} />
       </Routes>
     </Router>
+
+    <Footer/>
+    </>
   );
 }
 
