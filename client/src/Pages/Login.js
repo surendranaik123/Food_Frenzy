@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Login.css";
 import loginVideo from "../Assets/login.mp4";
+import axios from 'axios';
 
 const Login = () => {
   const [formValues, setFormValues] = useState({ email: "", password: "" });
   const [formErrors, setFormErrors] = useState({});
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,9 +31,35 @@ const Login = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormErrors(validate(formValues));
+    console.log(formValues);
+    const errors = validate();
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    try {
+      const response = await fetch("http://localhost:5000/api/v1/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formValues),
+      });
+if (response.ok) {
+  alert("su")
+  navigate('/')
+} else {
+  alert("fa") 
+  navigate('/signup')
+}
+     
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (

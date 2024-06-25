@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img from '../../Assets/logo.png';
+import img from '../../Assets/food_logo.png';
 import personlogo from '../../Assets/person-circle.svg';
 import '../../Styles/Header.css';
 import { Dropdown, DropdownItem } from 'react-bootstrap';
@@ -49,7 +49,7 @@ function Header() {
             <li className="nav-item" style={{ display: "flex", marginLeft: "140px" }}>
               <img src={personlogo} alt='personlogo' style={{ height: "35px", width: "35px", marginTop: "0px" }} />
               <NavDropdown style={{ marginTop: "0px" }}>
-                <DropdownItem href="/login" className="nav-link-custom">
+                <DropdownItem href="/signin" className="nav-link-custom">
                   Login with user credentials
                 </DropdownItem>
                 <hr />
