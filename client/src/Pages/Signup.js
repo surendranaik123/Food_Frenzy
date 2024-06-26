@@ -8,10 +8,14 @@ const Signup = () => {
     email: "",
     firstName: "",
     lastName: "",
+    address: "", // Added address
+    contact: "", // Added contact
     password: "",
     confirmPassword: "",
+    role: "user", // Default to "user"
+    secretKey: "",
   });
-const navigate=useNavigate( )
+  const navigate = useNavigate();
   const [formErrors, setFormErrors] = useState({});
 
   const handleChange = (e) => {
@@ -32,6 +36,14 @@ const navigate=useNavigate( )
     if (!formValues.lastName) {
       errors.lastName = "Last name is required";
     }
+    if (!formValues.address) {
+      errors.address = "Address is required";
+    }
+    if (!formValues.contact) {
+      errors.contact = "Contact is required";
+    } else if (!/^\d+$/.test(formValues.contact)) {
+      errors.contact = "Contact must be a valid phone number";
+    }
     if (!formValues.password) {
       errors.password = "Password is required";
     } else if (formValues.password.length < 6) {
@@ -42,26 +54,31 @@ const navigate=useNavigate( )
     } else if (formValues.confirmPassword !== formValues.password) {
       errors.confirmPassword = "Passwords do not match";
     }
+    if (formValues.role === "admin" && !formValues.secretKey) {
+      errors.secretKey = "Secret key is required for admin";
+    }
     return errors;
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setFormErrors(validate(formValues));
-  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     const errors = validate(formValues);
     setFormErrors(errors);
-  
+
     if (Object.keys(errors).length === 0) {
       console.log("Checked");
-      console.log("formValues",{email: formValues.email,
+      console.log("formValues", {
+        email: formValues.email,
         firstName: formValues.firstName,
         lastName: formValues.lastName,
+        address: formValues.address,
+        contact: formValues.contact,
         password: formValues.password,
-        confirmPassword: formValues.confirmPassword})
-        
+        confirmPassword: formValues.confirmPassword,
+        role: formValues.role,
+        secretKey: formValues.secretKey,
+      });
+
       fetch("http://localhost:5000/api/v1/usercreate", {
         method: "POST",
         crossDomain: true,
@@ -74,8 +91,12 @@ const navigate=useNavigate( )
           email: formValues.email,
           firstName: formValues.firstName,
           lastName: formValues.lastName,
+          address: formValues.address,
+          contact: formValues.contact,
           password: formValues.password,
           confirmPassword: formValues.confirmPassword,
+          role: formValues.role,
+          secretKey: formValues.secretKey,
         }),
       })
         .then((res) => {
@@ -86,7 +107,7 @@ const navigate=useNavigate( )
           }
         })
         .then((data) => {
-          console.log("userRegister",data );
+          console.log("userRegister", data);
           if (data) {
             alert("Registration Successful");
             navigate("/signin");
@@ -98,12 +119,9 @@ const navigate=useNavigate( )
     }
   };
 
-console.log(formValues);
+  console.log(formValues);
   return (
-    <div>
-    
     <div className="signup-page">
-      
       <div className="video-background">
         <video autoPlay loop muted>
           <source src={signupVideo} type="video/mp4" />
@@ -113,6 +131,44 @@ console.log(formValues);
       <div className="form-container">
         <form onSubmit={handleSubmit} className="signup-form">
           <h1 className="signup-heading">Signup</h1>
+          
+          <div className="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="user"
+                checked={formValues.role === "user"}
+                onChange={handleChange}
+              /> User
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="admin"
+                checked={formValues.role === "admin"}
+                onChange={handleChange}
+              /> Admin
+            </label>
+          </div>
+
+          {formValues.role === "admin" && (
+            <div className="form-group">
+              <input
+                type="password"
+                name="secretKey"
+                className="form-control"
+                placeholder="Secret Key"
+                value={formValues.secretKey}
+                onChange={handleChange}
+              />
+              {formErrors.secretKey && (
+                <span className="error">{formErrors.secretKey}</span>
+              )}
+            </div>
+          )}
+
           <div className="form-group">
             <input
               type="email"
@@ -156,6 +212,34 @@ console.log(formValues);
 
           <div className="form-group">
             <input
+              type="text"
+              name="address"
+              className="form-control"
+              placeholder="Address"
+              value={formValues.address}
+              onChange={handleChange}
+            />
+            {formErrors.address && (
+              <span className="error">{formErrors.address}</span>
+            )}
+          </div>
+
+          <div className="form-group">
+            <input
+              type="text"
+              name="contact"
+              className="form-control"
+              placeholder="Contact"
+              value={formValues.contact}
+              onChange={handleChange}
+            />
+            {formErrors.contact && (
+              <span className="error">{formErrors.contact}</span>
+            )}
+          </div>
+
+          <div className="form-group">
+            <input
               type="password"
               name="password"
               className="form-control"
@@ -191,10 +275,7 @@ console.log(formValues);
         </form>
       </div>
     </div>
-    </div>
   );
 };
 
 export default Signup;
-
-
