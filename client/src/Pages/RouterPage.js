@@ -10,6 +10,7 @@ import NonVeg from "./NonVeg";
 import Beverages from "./Beverages";
 import About from "./About"
 import Footer from "../Components/layout/Footer";
+import OffersPage from "./offers";
 
 function RouterPage() {
   console.log("RouterPage rendered");
@@ -25,6 +26,8 @@ function RouterPage() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Offers" element={<OffersPage />} />
+
       </Routes>
     </Router>
 
