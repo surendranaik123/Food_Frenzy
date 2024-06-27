@@ -12,7 +12,7 @@ const Signup = () => {
     contact: "", // Added contact
     password: "",
     confirmPassword: "",
-    role: "user", // Default to "user"
+    role: "", // No default role
     secretKey: "",
   });
   const navigate = useNavigate();
@@ -53,6 +53,9 @@ const Signup = () => {
       errors.confirmPassword = "Confirm password is required";
     } else if (formValues.confirmPassword !== formValues.password) {
       errors.confirmPassword = "Passwords do not match";
+    }
+    if (!formValues.role) {
+      errors.role = "Role is required";
     }
     if (formValues.role === "admin" && !formValues.secretKey) {
       errors.secretKey = "Secret key is required for admin";
@@ -131,7 +134,7 @@ const Signup = () => {
       <div className="form-container">
         <form onSubmit={handleSubmit} className="signup-form">
           <h1 className="signup-heading">Signup</h1>
-          
+
           <div className="radio-group">
             <label>
               <input
@@ -152,6 +155,10 @@ const Signup = () => {
               /> Admin
             </label>
           </div>
+
+          {formErrors.role && (
+            <span className="error">{formErrors.role}</span>
+          )}
 
           {formValues.role === "admin" && (
             <div className="form-group">
