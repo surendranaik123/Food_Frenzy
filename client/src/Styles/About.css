@@ -1,354 +1,102 @@
-.about_background{
-    margin-left: 150px;
-}
-
-    
-.aboutUs_person_1{
-    position: absolute;
-    width: 350px;
-    height: 300px;
-    margin-left: 200px;
-    background: linear-gradient(89.82deg, #666BC5 0.15%, #B6B6DC 39.53%, #EFECEC 99.85%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    
-}
-
-.aboutUs_person_1:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.aboutUs_person_2{
-      position: absolute;
-      width: 350px;
-      height: 300px;
-      margin-left: 800px;
-      background: linear-gradient(89.82deg, #666BC5 0.15%, #B6B6DC 39.53%, #EFECEC 99.85%);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-}
-.aboutUs_person_2:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.aboutUs_person_3{
-margin-top: 420px;
-margin-left: 50px;
-position: absolute;
-width: 350px;
-height: 300px;
-
-background: linear-gradient(89.82deg, #666BC5 0.15%, #B6B6DC 39.53%, #EFECEC 99.85%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-
-}
-.aboutUs_person_3:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.aboutUs_person_4{
-    margin-top: 420px;
-    margin-left: 500px;
-position: absolute;
-width: 350px;
-height: 300px;
-
-background: linear-gradient(89.82deg, #666BC5 0.15%, #B6B6DC 39.53%, #EFECEC 99.85%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-}
-.aboutUs_person_4:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.aboutUs_person_5{
-    margin-top: 420px;
-    margin-left: 950px;
-position: absolute;
-width: 350px;
-height: 300px;
-
-background: linear-gradient(89.82deg, #666BC5 0.15%, #B6B6DC 39.53%, #EFECEC 99.85%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-}
-.aboutUs_person_5:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.aboutUs_person_1_name{
-
-position: absolute;
-width: 107px;
-height: 39px;
-
-font-family: 'Secular One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 44px;
-
-color: #000000;
-
-margin-top: 245px;
-margin-left: 210px;
-}
-.aboutUs_person_2_name{
-    /* MANOJ */
-
-position: absolute;
-width: 107px;
-height: 39px;
-
-font-family: 'Secular One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 44px;
-
-color: #000000;
-
-margin-top: 245px;
-margin-left: 810px;
-}
-.aboutUs_person_3_name{
-    position: absolute;
-width: 107px;
-height: 39px;
-
-font-family: 'Secular One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 44px;
-
-color: #000000;
-margin-top: 630px;
-margin-left: 60px;
-
-}
-.aboutUs_person_4_name{
-    position: absolute;
-width: 107px;
-height: 39px;
-
-font-family: 'Secular One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 44px;
-
-color: #000000;
-margin-top: 630px;
-margin-left: 510px;
-
-}
-.aboutUs_person_5_name{
-    position: absolute;
-width: 107px;
-height: 39px;
-
-font-family: 'Secular One';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 44px;
-
-color: #000000;
-margin-top: 630px;
-margin-left: 960px;
-
-}
-
-.profile1{
-position: absolute;
-width: 350px;
-height: 255px;
-top: 100px;
-left: 350px;
-background: #000000;
-padding: 2px;
-border-radius: 10px;
-
-
-}
-.profile1:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.profile2{
-    /* Rectangle 47 */
-
-position: absolute;
-width: 350px;
-height: 255px;
-top: 100px;
-left: 950px;
-background: #000000;
-padding: 2px;
-border-radius: 10px;
-
-
-}
-.profile2:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.profile3{
-    /* Rectangle 47 */
-
-position: absolute;
-width: 350px;
-height: 255px;
-top: 500px;
-left: 200px;
-
-background: #000000;
-padding: 2px;
-border-radius: 10px;
-
-}
-.profile3:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.profile4{
-    /* Rectangle 47 */
-
-position: absolute;
-width: 350px;
-height: 255px;
-top: 500px;
-left: 650px;
-
-background: #000000;
-padding: 2px;
-border-radius: 10px;
-}
-.profile4:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.profile5{
-    /* Rectangle 47 */
-
-position: absolute;
-width: 350px;
-height: 255px;
-top: 500px;
-left: 1100px;
-
-background: #000000;
-padding: 2px;
-border-radius: 10px;
-
-}
-.profile5:hover {
-    box-shadow: 0px 0px 20px 5px rgb(0, 0, 0); /* Glow effect */
-}
-.mail_1{
-position: absolute;
-width: 30px;
-height: 22px;
-top: 390px;
-left: 560px;
-}
-
-.twitter_1{
-position: absolute;
-width: 30px;
-height: 28px;
-top: 388px;
-left: 600px;
-}
-.linkedin_1{
-    position: absolute;
-    width: 30px;
-    height: 28px;
-    top: 386px;
-    left: 640px;
-}
-.mail_2{
-position: absolute;
-width: 30px;
-height: 22px;
-top: 390px;
-left: 1160px;
-}
-.twitter_2{
-position: absolute;
-width: 30px;
-height: 28px;
-top: 388px;
-left: 1200px;
-}
-.linkedin_2{
-    position: absolute;
-    width: 30px;
-    height: 28px;
-    top: 386px;
-    left: 1240px;
-}
-.mail_3{
-    position: absolute;
-    width: 30px;
-    height: 22px;
-    top: 778px;
-    left: 410px;
-    }
-.twitter_3{
-    position: absolute;
-    width: 30px;
-    height: 28px;
-    top: 775px;
-    left: 450px;
-    }
-.linkedin_3{
-        position: absolute;
-        width: 30px;
-        height: 28px;
-        top: 775px;
-        left: 490px;
-    }
-.mail_4{
-position: absolute;
-width: 30px;
-height: 22px;
-top: 778px;
-left: 860px;
-}
-.twitter_4{
-position: absolute;
-width: 30px;
-height: 28px;
-top: 775px;
-left: 900px;
-}
-.linkedin_4{
-    position: absolute;
-    width: 30px;
-    height: 28px;
-    top: 775px;
-    left: 940px;
-}
-.mail_5{
-position: absolute;
-width: 30px;
-height: 22px;
-top: 778px;
-left: 1310px;
-}
-.twitter_5{
-position: absolute;
-width: 30px;
-height: 28px;
-top: 775px;
-left: 1350px;
-}
-.linkedin_5{
-    position: absolute;
-    width: 30px;
-    height: 28px;
-    top: 775px;
-    left: 1390px;
-}
-.video-background {
+.about-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .video-background {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+    object-fit: cover;
   }
+  
+  .profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .profile-card {
+    background:rgb(222, 216, 216);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    padding-top: 5px;
+    text-align: center;
+    width: calc(33.333% - 40px);
+    margin: 10px;
+    transition: transform 0.3s;
+    height: 410px;
+    overflow: hidden;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -10px;
+  }
+  
+  .profile-name {
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 1024px) {
+    .profile-card {
+      width: calc(50% - 40px);
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      width: calc(50% - 40px);
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 670px) {
+    .profile-card {
+      width: calc(100% - 40px);
+      padding: 15px;
+      height: auto; /* Let height adjust based on content */
+    }
+    .social-icons img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-card {
+      width: calc(100% - 40px);
+      height: auto;
+    }
+  }
+  
