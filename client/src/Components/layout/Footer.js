@@ -33,16 +33,16 @@ const Footer = () => {
               </li>
 
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Mens</a>
+                <a href="/" className="text-dark" style={footerText}>Veg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Womens</a>
+                <a href="/" className="text-dark" style={footerText}>Non-veg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Kids</a>
+                <a href="/" className="text-dark" style={footerText}>Beverages</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Classics</a>
+                <a href="/" className="text-dark" style={footerText}>Offers</a>
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ const Footer = () => {
               <div>
                 <a href="/" className="text-blue" style={footerText}>TelePhone</a>
                 </div>
-                <div> <a href="/" className="text-dark" style={footerText}>9652497327</a></div>
+                <div> <a href="/" className="text-dark" style={footerText}>9999999999</a></div>
               </li>
              
 
@@ -142,7 +142,7 @@ const Footer = () => {
     {/* Copyright text */}
     <div className="col-md-6 col-12 text-center text-md-left mb-3">
       <p style={{ fontFamily: "Arial", fontSize: "20px", margin: 0 }}>
-        &copy; 2023 Training, Inc. All rights reserved.
+        &copy; 2024 Food-Frenzy, Inc. All rights reserved.
       </p>
     </div>
 
@@ -158,7 +158,7 @@ const Footer = () => {
         <a href="https://twitter.com/" className="text-dark mr-3" style={{marginLeft:"20px"}}>
           <FontAwesomeIcon icon={faTwitter} size="2x" />
         </a>
-        <a href="https://github.com/Akash-Traveller/Training-Proj" className="text-dark mr-3" style={{marginLeft:"20px"}}>
+        <a href="https://github.com/surendranaik123/Food_Frenzy" className="text-dark mr-3" style={{marginLeft:"20px"}}>
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
         <a href="https://www.google.com/" className="text-dark mr-3" style={{marginLeft:"20px"}}>
