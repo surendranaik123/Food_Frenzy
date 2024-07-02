@@ -44,6 +44,7 @@ const Footer = () => {
               <li style={{ marginBottom: "10px" }}>
                 <a href="/" className="text-dark" style={footerText}>Offers</a>
               </li>
+        
             </ul>
           </div>
 

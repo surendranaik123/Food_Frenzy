@@ -4,11 +4,11 @@ import ProductModel from "../models/products.js"
 class ProductController {
  
     static createProduct= async (req, res) => {
-      const {id, category,image,price,title,description,discount, discountedPrice,date,rating} = req.body;
+      const { category,image,price,title,description,discount, discountedPrice,date,rating} = req.body;
     
       try {
         const newUser = ProductModel({
-        id,
+       
         category,
         image: image.myFile, 
         price,
@@ -29,6 +29,9 @@ class ProductController {
         res.status(400).json({ message: "Failed to create user" });
       }
     };
+
+
+
 
     static getAllProducts = async (req, res) => {
       try {

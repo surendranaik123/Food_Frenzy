@@ -1,0 +1,94 @@
+.Productform {
+    width: 450px;
+    margin-left: 300px;
+}
+
+.lablesdata {
+    margin-bottom: 20px;
+}
+
+.productStore_btn {
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+}
+.productStore_btn:hover {
+    color: white;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(76, 17, 212);
+    border: 2px solid white; /* Corrected property name and value */
+}
+
+/* ProductData */
+.card {
+    width: 25rem;
+    margin: 10px;
+    height: 370px;
+    border: none;
+  }
+  
+  .card:hover {
+  
+    border: 2px solid lightgray;
+  }
+.gRXfSm {
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(
+      90deg,
+      rgb(17, 85, 203) 0%,
+      rgb(83, 140, 238) 25%,
+      rgb(17, 85, 203) 50%,
+      rgba(17, 85, 203, 0.8) 80%,
+      rgba(17, 85, 203, 0) 100%
+    );
+    padding: 2px 50px 2px 14px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+  
+  .walkin-icn {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+  }
+  
+  .walkin-offer-value {
+    color: #fff; /* Change this to your desired text color */
+    font-weight: bold;
+  }
+  
+
+@media (max-width: 768px) {
+    .Productform {
+        width: 100%; /* Adjust width to fit parent container */
+        margin-left: auto; /* Center the form */
+        margin-right: auto; /* Center the form */
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    .lablesdata {
+        margin-bottom: 20px;
+    }
+    
+    .productStore_btn {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Productform {
+        width: 100%; /* Ensure full width on very small screens */
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
