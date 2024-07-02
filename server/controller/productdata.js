@@ -10,7 +10,7 @@ class ProductController {
         const newUser = ProductModel({
         id,
         category,
-        image: image.myFile, 
+        image, 
         price,
         title,
         description,
