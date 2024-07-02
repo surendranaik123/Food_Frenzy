@@ -10,6 +10,9 @@ import NonVeg from "./NonVeg";
 import Beverages from "./Beverages";
 import About from "./About"
 import Footer from "../Components/layout/Footer";
+import UserData from "./UserData";
+import ProductStore from "./ProductStore";
+import ProductData from "./ProductData";
 
 function RouterPage() {
   console.log("RouterPage rendered");
@@ -25,6 +28,9 @@ function RouterPage() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/About" element={<About />} />
+        <Route path="/userdata" element={<UserData/>} />
+        <Route path="/productstore" element={<ProductStore/>} />
+        <Route path="/productdata" element={<ProductData/>} />
       </Routes>
     </Router>
 
