@@ -33,17 +33,15 @@ const Footer = () => {
               </li>
 
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Mens</a>
+                <a href="/" className="text-dark" style={footerText}>Veg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Womens</a>
+                <a href="/" className="text-dark" style={footerText}>NonVeg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Kids</a>
+                <a href="/" className="text-dark" style={footerText}>Beverages</a>
               </li>
-              <li style={{ marginBottom: "10px" }}>
-                <a href="/" className="text-dark" style={footerText}>Classics</a>
-              </li>
+        
             </ul>
           </div>
 
