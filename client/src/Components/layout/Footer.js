@@ -36,6 +36,10 @@ const Footer = () => {
                 <a href="/" className="text-dark" style={footerText}>Veg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
+                <a href="/" className="text-dark" style={footerText}>NonVeg</a>
+              </li>
+              <li style={{ marginBottom: "10px" }}>
+                <a href="/" className="text-dark" style={footerText}>Beverages</a>
                 <a href="/" className="text-dark" style={footerText}>Non-veg</a>
               </li>
               <li style={{ marginBottom: "10px" }}>
