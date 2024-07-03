@@ -105,6 +105,10 @@ if (response.ok) {
           <div className="signup-link">
             New User? <Link to="/signup">Signup</Link>
           </div>
+          <div className="signup-link">
+            forget Password? <Link to="/ForgetPage">Reset</Link>
+          </div>
+          
         </form>
       </div>
     </div>
