@@ -14,6 +14,7 @@ import UserData from "./UserData";
 import ProductStore from "./ProductStore";
 import ProductData from "./ProductData";
 import OffersPage from "./offers";
+import ForgetPassword from "./ForgetPage";
 
 function RouterPage() {
   console.log("RouterPage rendered");
@@ -33,6 +34,7 @@ function RouterPage() {
         <Route path="/productstore" element={<ProductStore/>} />
         <Route path="/productdata" element={<ProductData/>} />
         <Route path="/Offers" element={<OffersPage />} />
+        <Route path="/forgetpage"element={<ForgetPassword />}/>
 
       </Routes>
     </Router>
