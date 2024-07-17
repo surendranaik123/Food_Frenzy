@@ -105,14 +105,10 @@ background: #6466BD;
     width: 300px;
     height: auto;
     margin-right: 32px;
-    width: 308px;
-height: 305px;
-margin-left: -5px;
-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
-border-radius: 100%;
-background-color: #000000;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    background-color: #000000;
 }
-
 
 /* Menu Section Styles */
 .menu-section {
@@ -213,10 +209,9 @@ background-color: #000000;
     }
 
     .home_logo_modified {
-        width: 40%; /* Adjusted for smaller screens */
+        width: 40%;
         margin-top: 20px;
         margin-left: 350px;
-
     }
     .biryani_text_modified {
         margin-left: -50px;
@@ -355,10 +350,34 @@ background-color: #000000;
 
     }
     
-    .home_logo_modified{
-        margin-left: 320px;
-        width: 30%;
+    .hero_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 200px;
+        width: 55%; 
+        height: 180px;
+    }
+    
 
+    .home_logo_modified {
+        width: 120%;
+        height: 180px;
+        margin-left: -10px;
+        object-fit: cover; 
+        border-radius: 100%;
     }
 
+   
+    
+
+
+}
+@media (min-width: 769px) {
+    .home_logo_modified {
+        width: 308px;
+        height: 305px;
+        margin-left: -5px;
+    }
 }
