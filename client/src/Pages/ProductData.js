@@ -23,8 +23,15 @@ function ProductData() {
         {productData.map((product, index) => (
           <div className="card"  key={index}>
             <img src={product.image} className="card-img-top" alt={product.title} style={{ height: "230px", width: "100%" }} />
-            <div class="sc-ZUflv gRXfSm"><img src="https://b.zmtcdn.com/data/o2_assets/c0e0fe766225fb9cdb3245a9915571201716296953.png" alt="Zomato Walkin" class="walkin-icn" /><div class="walkin-offer-value ">Flat <b>{product.discount}% OFF</b></div></div>
-            <div className="card-body">
+           
+            {product.discount > 0 && (
+                <div className="sc-ZUflv gRXfSm">
+                  <img src="https://b.zmtcdn.com/data/o2_assets/c0e0fe766225fb9cdb3245a9915571201716296953.png" alt="Zomato Walkin" className="walkin-icn" />
+                  <div className="walkin-offer-value">Flat <b>{product.discount}% OFF</b></div>
+                </div>
+              )}
+
+
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <h4 className="card-title " >{product.title.substring(0, 11)}...</h4>
                 <h5 style={{backgroundColor:"green",color:"white",padding:"4px",paddingLeft:"12px",paddingRight:"12px",borderRadius:"10px"}}>{product.rating} <i className="bi bi-star" style={{ fontSize: "13px", position: "relative", top: "-2px" }}></i></h5>
@@ -38,7 +45,7 @@ function ProductData() {
                 </h6>
               </div>
             </div>
-          </div>
+          
         ))}
       </div>
     </>
